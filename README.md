@@ -1,6 +1,7 @@
 # Blogging_Website
 
 Overview
+
 This project is a dynamic and responsive blogging website that allows users to create their blogs. It is built using HTML, CSS, JavaScript, Node.js, Express.js, and EJS. The application does not use a database, but it effectively manages the blogs using in-memory data storage during runtime.
 
 
