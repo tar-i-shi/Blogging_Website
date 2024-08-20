@@ -14,8 +14,10 @@ Installation Procedure
    'npm i'
    
 3. Run the Application
+   
    Open your terminal, navigate to the project directory, and start the application by running:
    'node index.js'
    
 4. Access the Website
+   
    Open your web browser and navigate to the displayed url.
