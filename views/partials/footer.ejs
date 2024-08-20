@@ -1,0 +1,73 @@
+<footer>
+    <div class="footer-container">
+        <div class="collaborate-container">
+            <div class="section-1">
+                <h1>Let's Collaborate</h1>
+                <p>Drop your contact information and message related to collaboration.</p>
+                <div class="contact-us">
+                    <h3>Contact Us</h3>
+                    <p>Email: blogger@example.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                </div>
+            </div>
+            <div class="vertical-separator"></div>
+            <div class="section-2">
+                <% if (messageSent) { %>
+                    <p>Request sent! Thank you for your message.</p>
+                    <% } else { %>
+                        <form action="/send-message" method="POST">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Enter your Email." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" placeholder="**Type your message here.**" rows="4"
+                                    required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                        <% } %>
+            </div>
+        </div>
+        <div class="navbar-container2">
+            <div class="newsletter">
+                <h3>Magazine Blog</h3>
+                <p>Join our newsletter to stay up to date on features and releases.</p>
+                <% if (subscribeSent) { %>
+                    <p>Request sent! Thank you for subscribing.</p>
+                    <% } else { %>
+                        <form action="/subscribe" method="POST">
+                            <input type="email" placeholder="Enter your Email" id="email" name="email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <% } %>
+            </div>
+            <div class="Quick-links">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="/home">Home</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/blogs">Blog</a></li>
+                </ul>
+            </div>
+            <div class="follow-us">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+</body>
+
+</html>

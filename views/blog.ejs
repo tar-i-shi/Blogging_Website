@@ -1,0 +1,36 @@
+<%- include("partials/header.ejs") %>
+    <div class="baackground">
+        <img src="images/Group 5upper.png" alt="background image" class="imgb2">
+        <img src="images/13022 1bottom.png" alt="background image" class="imgb">
+    </div>
+    <div class="form-container">
+        <form class="create_blog" action="/create_blog" method="post">
+            <div class="post-container">
+                <label class="post-label" for="name">Name</label>
+                <br>
+                <input type="text" name="name" class="small-text" required>
+                <br>
+                <label class="post-label" for="blogkey">Blogkey</label>
+                <br>
+                <input type="password" name="'blogkey" class="small-text" required>
+                <br>
+                <label class="post-label" for="title">Title</label>
+                <br>
+                <input type="text" name="title" class="small-text" required>
+                <br>
+                <label class="post-label" for="image-url">Image URL</label>
+                <br>
+                <input type="url" name="image_url" class="small-text" required>
+                <br>
+                <label class="post-label" for="blog-content">Content for Blog</label>
+                <br>
+                <textarea name="content" class="post-content" cols="30" rows="10" required=""></textarea>
+                <br>
+                <button type="submit" id="submit">Submit</button>
+                <br>
+            </div>
+        </form>
+    </div>
+    </body>
+
+    </html>
